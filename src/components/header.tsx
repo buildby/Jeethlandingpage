@@ -32,7 +32,7 @@ export const Header = () => {
           </nav>
 
           {/* Rounded background download button */}
-          <a href="#" className="ml-8 text-sm py-2 px-6 rounded-full bg-secondary hover:bg-primary">
+          <a href="#" className="bg-secondary text-white font-semibold ml-8 text-sm py-2 px-6 rounded-full  hover:bg-primary">
             Download
           </a>
 

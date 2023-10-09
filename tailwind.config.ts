@@ -9,14 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#00B3B7',
+        primary: '#14A3B5',
         secondary: '#3B393A',
       },
     },
     fontFamily: {
       display: ['Poppins'],
       body: ['Poppins'],
-    }
+    },
+    container: {
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1200px',
+      }
+    },
   },
   plugins: [],
 }
