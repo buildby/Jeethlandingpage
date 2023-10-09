@@ -11,7 +11,6 @@ export const Footer = () => {
             <p className="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas repudiandae pariatur culpa quam est, earum beatae fuga tenetur ad.</p>
           </div>
 
-
           <div className="my-4">
             <h3 className="mb-4 font-thin">Footer Links</h3>
             <ul className="mt-2 text-sm text-gray-500">
@@ -22,7 +21,6 @@ export const Footer = () => {
               <li className="text-sm mb-2"><Link href="#">Contact Us</Link></li>
             </ul>
           </div>
-
 
           <div className="my-4">
             <h3 className="mb-4 font-thin">Contact Us</h3>
@@ -38,19 +36,16 @@ export const Footer = () => {
             </div>
           </div>
 
-
-
-
           <div className="my-4">
             <h3 className="font-thin">Footer Nav</h3>
-
           </div>
+        </div>
+
+        <div className="mt-8 text-xs text-gray-500">
+          &copy; 2023. All rights reserved.
         </div>
       </div>
 
-      <div className="mt-8 text-xs text-gray-500">
-        &copy; 2023. All rights reserved.
-      </div>
     </div>
   );
 };
