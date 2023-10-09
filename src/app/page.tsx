@@ -48,6 +48,10 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="p-4 md:p-0 mb-8">
+        <img src="home/section-last.png" alt="" />
+      </section>
+
     </main>
   )
 }
