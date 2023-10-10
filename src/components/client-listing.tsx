@@ -117,10 +117,10 @@ const clientData: Client[] = [
 
 export const ClientListing = () => {
   return (
-    <div className="rounded-xl bg-white p-8 w-[90%] mx-auto">
+    <div className="rounded-xl bg-white p-4 md:p-8 md:w-[90%] mx-auto">
       <h4 className="text-primary text-xl pb-8 font-bold text-center">Explore the Market Place on our app</h4>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-4 md:gap-8">
         {clientData.map((client) => (ClientCard(client)))}
       </div>
     </div>
@@ -130,10 +130,10 @@ export const ClientListing = () => {
 export const ClientCard = (clientData: Client) => {
   return (
     <div className="p-2 flex items-center justify-between text-secondary rounded border border-gray-100 hover:bg-primary hover:text-white group">
-      <img className="mr-4" src={clientData.clientImage} alt={clientData.clientName} />
+      <img className="w-10 md:w-16 mr-2 md:mr-4" src={clientData.clientImage} alt={clientData.clientName} />
 
       <div className="flex-1 text-sm">
-        <p className="mb-2">Vendor: <b>{clientData.vendor}</b></p>
+        <p className="mb-2 w-40 md:w-48 truncate">Vendor: <b>{clientData.vendor}</b></p>
         <p><Rating rating={clientData.rating} /> {clientData.vehicleTypes.map((vehicle) => <>{vehicle.type}: <b>{vehicle.quantity}</b> </>)}</p>
       </div>
     

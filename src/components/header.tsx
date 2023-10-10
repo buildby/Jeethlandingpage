@@ -10,7 +10,7 @@ export const Header = () => {
     { title: 'Try Demo', path: '/try-demo' },
   ]
   return (
-    <header className="bg-white min-h-[64px]">
+    <header className="bg-white min-h-[64px] flex">
       <div className="container mx-auto flex justify-between items-center px-4 md:px-0">
         {/* Logo on the left */}
         <Link className="flex items-center" href={'/'}>
