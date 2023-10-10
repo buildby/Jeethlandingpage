@@ -11,7 +11,7 @@ export const Header = () => {
   ]
   return (
     <header className="bg-white min-h-[64px]">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center px-4 md:px-0">
         {/* Logo on the left */}
         <Link className="flex items-center" href={'/'}>
           <img src="/logo.png" alt="Logo" className="" />
@@ -20,7 +20,7 @@ export const Header = () => {
         <div className="flex items-center ">
 
           {/* Links on the right */}
-          <nav className="">
+          <nav className="hidden md:block">
             {
               navLinks.map(link => (
                 <Link href={link.path} key={link.title} className="text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover:border-b-primary">

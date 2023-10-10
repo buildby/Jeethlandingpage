@@ -133,7 +133,7 @@ export const ClientCard = (clientData: Client) => {
       <img className="mr-4" src={clientData.clientImage} alt={clientData.clientName} />
 
       <div className="flex-1 text-sm">
-        <p className="mb-2">Vendor: {clientData.vendor}</p>
+        <p className="mb-2">Vendor: <b>{clientData.vendor}</b></p>
         <p><Rating rating={clientData.rating} /> {clientData.vehicleTypes.map((vehicle) => <>{vehicle.type}: <b>{vehicle.quantity}</b> </>)}</p>
       </div>
     
@@ -147,8 +147,9 @@ export const ClientCard = (clientData: Client) => {
 const Rating = ({rating}: {rating: number}) => {
   const backgroundColor = rating > 4 ? "bg-green-500" : rating > 3 ? "bg-yellow-500" : "bg-red-500"
   return (
-    <span className={`px-1 text-sm rounded-md text-white ${backgroundColor}`}>
-      <span className="">{rating}</span>
+    <span className={`flex jusitfy-center px-1 rounded-md max-w-[max-content] ${backgroundColor}`}>
+      <img className="mr-1" src="icons/star.svg" alt="Rating" />
+      <span className="text-sm text-white">{rating}</span>
     </span>
   )
 }
