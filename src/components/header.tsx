@@ -4,11 +4,10 @@ import React from 'react';
 export const Header = () => {
   const navLinks = [
     { title: 'Home', path: '/' },
-    { title: 'About', path: '/about' },
-    { title: 'Solution', path: '/solution' },
+    { title: 'About', path: '/#about' },
+    { title: 'Solution', path: '/#solution' },
     { title: 'Contact', path: '/contact' },
-    { title: 'Try Demo', path: '/demo' },
-    { title: 'Contact', path: '/contact' }
+    { title: 'Try Demo', path: '/try-demo' },
   ]
   return (
     <header className="bg-white min-h-[64px]">
