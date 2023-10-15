@@ -1,4 +1,5 @@
 import { ClientListing } from "../components/client-listing";
+import { ValueSlider } from "../components/value-slider";
 
 export default function HomePage() {
   return (
@@ -51,8 +52,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="">
-        <img src="home/section-last.png" alt="" />
+      <section className="p-4 md:p-0 mb-8 container mx-auto z-1">
+        <h3 className="text-primary text-2xl font-bold text-center">The Value We Add</h3>
+        <div className="bg-primary my-4 w-[48px] h-[4px] rounded-lg m-auto"></div>
+        <p className="text-center">Get the best out of our product in premium.</p>
+        <ValueSlider/>
       </section>
 
     </main>
