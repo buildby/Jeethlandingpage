@@ -1,13 +1,14 @@
 import { ClientListing } from "../components/client-listing";
+import { Testimonials } from "../components/testimonials";
 import { ValueSlider } from "../components/value-slider";
 
 export default function HomePage() {
   return (
     <main className="">
-      
-      <section className="p-4 md:p-0 mb-8 text-white bg-primary">
-        <div className="container mx-auto grid md:grid-cols-2">
-          <div className="flex flex-col py-8 md:py-16">
+
+      <section className="mb-8 text-white bg-primary">
+        <div className="p-4 md:p-0 container mx-auto grid md:grid-cols-2 overflow-hidden">
+          <div className="flex flex-col py-8 md:py-16 order-2 md:order-1">
             <h2 className="mb-4 font-thin text-3xl">Are you a driver?</h2>
             <h3 className="mb-6 font-bold text-4xl">Access our marketplace with 1000's of ETS Vendors to work with.</h3>
 
@@ -16,8 +17,8 @@ export default function HomePage() {
               Download Now
             </a>
           </div>
-          <div className="md:block hidden relative">
-            <img className="absolute left-0 bottom-0" src="home/car.png" alt="" />
+          <div className="order-1 md:order-2 transform translate-x-[-40%] translate-y-[20%] md:translate-x-[-20%] md:translate-y-[20%]">
+            <img className="scale-[1.7] md:scale-[1.4]" src="home/car-with-shadow.png" alt="" />
           </div>
         </div>
       </section>
@@ -43,20 +44,30 @@ export default function HomePage() {
             </a>
           </div>
         </div>
-        
+
       </section>
 
       <section className="p-4 md:p-0 mb-8 text-white bg-primary">
         <div className="container mx-auto py-16">
-          <ClientListing/>
+          <ClientListing />
         </div>
       </section>
 
-      <section className="p-4 md:p-0 mb-8 container mx-auto z-1">
+      <section className="p-4 md:p-0 mb-8 container mx-auto">
         <h3 className="text-primary text-2xl font-bold text-center">The Value We Add</h3>
         <div className="bg-primary my-4 w-[48px] h-[4px] rounded-lg m-auto"></div>
         <p className="text-center">Get the best out of our product in premium.</p>
-        <ValueSlider/>
+        <ValueSlider />
+      </section>
+
+      <section className="p-4 md:p-12 mb-8 mx-auto bg-primary">
+        <div className="container mx-auto">
+
+          <h3 className="text-white text-2xl font-bold text-center">1000's Of happy drivers across the country.</h3>
+          <div className="bg-white my-4 w-[48px] h-[4px] rounded-lg m-auto"></div>
+          <p className="text-white m-auto text-center w-1/2">Yeah! we're proud with numbers. We've helped thousands of driver partners all around the world with our bespoke service. Hover ontop of them pic to view their testimonials.</p>
+          <Testimonials />
+        </div>
       </section>
 
     </main>
