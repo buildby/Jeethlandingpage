@@ -57,11 +57,13 @@ export const ValueSlider = () => {
     },
   ];
 
+  const isBrowser = () => typeof window !== "undefined"
+
   return (
     <div className="my-8 py-8">
       <Swiper
         spaceBetween={0}
-        slidesPerView={window.innerWidth > 768 ? 3 : 1}
+        slidesPerView={isBrowser() && window.innerWidth > 768 ? 3 : 1}
         draggable={true}
         loop={true}
         autoplay= {{
