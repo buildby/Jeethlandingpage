@@ -1,5 +1,6 @@
 import { Button } from "../components/Button";
 import { ClientListing } from "../components/client-listing";
+import { NewsLetter } from "../components/news-letter";
 import { Testimonials } from "../components/testimonials";
 import { ValueSlider } from "../components/value-slider";
 
@@ -16,8 +17,8 @@ export default function HomePage() {
             <p className="font-extralight text-xl">100% transparency on the pricing and business model.</p>
             <Button text="Downoad Now" link="#" className="mt-8" />
           </div>
-          <div className="order-1 md:order-2 translate-x-[-40%] translate-y-[40%] md:translate-x-[-20%] md:translate-y-[20%]">
-            <img className="scale-[1.7] md:scale-[1.4]" src="home/car-with-shadow-2.png" alt="" />
+          <div className="order-1 md:order-2 translate-x-[-40%] translate-y-[40%] md:translate-x-[-20%] md:translate-y-[30%]">
+            <img className="scale-[1.7] md:scale-[1.5]" src="home/car-with-shadow-2.png" alt="" />
           </div>
         </div>
         
@@ -53,7 +54,7 @@ export default function HomePage() {
             <img className="w-full" src="home/wave-inverted.svg" alt="" />
           </div>
         </div>
-        <div className="my-8 p-4 md:p-0 container mx-auto py-16">
+        <div className="md:my-8 md:p-4 p-4 my-4 container mx-auto md:py-16">
           <ClientListing />
         </div>
       </section>
@@ -65,7 +66,7 @@ export default function HomePage() {
         <ValueSlider />
       </section>
 
-      <section className="mb-8 mx-auto bg-primary">
+      <section className="mx-auto bg-primary relative">
         <div className="relative">
           <div className="w-full">
             <img className="w-full" src="home/wave-inverted.svg" alt="" />
@@ -74,8 +75,22 @@ export default function HomePage() {
         <div className="p-4 md:p-12 container mx-auto">
           <h3 className="text-white text-2xl font-bold text-center">1000's Of happy drivers across the country.</h3>
           <div className="bg-white my-4 w-[48px] h-[4px] rounded-lg m-auto"></div>
-          <p className="text-white m-auto text-center w-1/2">Yeah! we're proud with numbers. We've helped thousands of driver partners all around the world with our bespoke service. Hover ontop of them pic to view their testimonials.</p>
+          <p className="text-white m-auto text-center md:w-1/2">Yeah! we're proud with numbers. We've helped thousands of driver partners all around the world with our bespoke service. Hover ontop of them pic to view their testimonials.</p>
           <Testimonials />
+        </div>
+
+        <div className="min-h-[20px] md:min-h-[100px]"></div>
+        <div className="w-full absolute bottom-0">
+          <img className="w-full" src="home/wave.svg" alt="" />
+        </div>
+      </section>
+
+      <section className="mx-auto">
+        <div className="p-4 md:p-12 md:pt-0  container mx-auto">
+          <h3 className="text-primary text-2xl font-bold text-center">Subscribe our newsletter</h3>
+          <div className="bg-primary my-4 w-[48px] h-[4px] rounded-lg m-auto"></div>
+          <p className="text-secondary m-auto text-center md:w-1/2">Subscribe to our newsletter for daily/weekly<br/>update of our products and services.</p>
+          <NewsLetter />
         </div>
       </section>
 

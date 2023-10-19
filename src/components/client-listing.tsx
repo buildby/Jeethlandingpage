@@ -134,7 +134,7 @@ export const ClientCard = (clientData: Client) => {
 
       <div className="flex-1 text-sm">
         <p className="mb-2 w-40 md:w-48 truncate">Vendor: <b>{clientData.vendor}</b></p>
-        <p><Rating rating={clientData.rating} /> {clientData.vehicleTypes.map((vehicle) => <>{vehicle.type}: <b>{vehicle.quantity}</b> </>)}</p>
+        <p className="flex gap-1"><Rating rating={clientData.rating} /> {clientData.vehicleTypes.map((vehicle) => <>{vehicle.type}: <b>{vehicle.quantity}</b> </>)}</p>
       </div>
     
       <a className="border border-gray-300 rounded block p-2 text-sm" href="#">
