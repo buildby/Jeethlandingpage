@@ -48,11 +48,24 @@ export const Testimonials = () => {
 
 export const TestimonialCard = (data: TestimonialCard) => {
   return (
-    <div className="bg-white rounded-md p-2 w-[300px]">
-      <p>{data.name}</p>
-      <p>{data.rating}</p>
-      <p>{data.title}</p>
-      <p>{data.description}</p>
+    <div className="flex items-center p-4">
+      <div className="">
+        <svg width="15" height="18" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26.2239 35.0967L1.69396 19.849C0.44762 19.0742 0.455281 17.2533 1.70822 16.4602L26.2382 0.933846C27.5704 0.0906319 29.2935 1.02881 29.2935 2.59734L29.2935 33.3715C29.2935 34.9476 27.5555 35.9244 26.2239 35.0967Z" fill="#fff" stroke="#3B393A" strokeWidth={1}/>
+        </svg>
+      </div>
+      <div className="bg-white bg-opacity-90 rounded-md p-2 min-w-[300px] border border-secondary">
+        <p className="text-sm mb-2">{data.name}</p>
+        <p className="flex gap-1">
+          {Array(data.rating).fill(0).map((_, i) => {
+            return (
+              <img src="icons/star-blue.svg" alt="Rating Star" />
+            )
+          })}
+        </p>
+        <p className="my-1 text-sm font-semibold">{data.title}</p>
+        <p className="text-xs">{data.description}</p>
+      </div>
     </div>
   )
 }
