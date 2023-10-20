@@ -59,7 +59,7 @@ export const TestimonialCard = (data: TestimonialCard) => {
         <p className="flex gap-1">
           {Array(data.rating).fill(0).map((_, i) => {
             return (
-              <img src="icons/star-blue.svg" alt="Rating Star" />
+              <img key={i} src="icons/star-blue.svg" alt="Rating Star" />
             )
           })}
         </p>
