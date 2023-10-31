@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
 
           <div className="my-4">
-            <img className="mb-4" src={'logo.png'} alt="Jeeth Logo" />
+            <img className="mb-4" src={'logo-light.png'} alt="Jeeth Logo" />
             <p className="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas repudiandae pariatur culpa quam est, earum beatae fuga tenetur ad.</p>
           </div>
 
