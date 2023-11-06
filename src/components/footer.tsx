@@ -8,41 +8,52 @@ export const Footer = () => {
 
           <div className="my-4">
             <img className="mb-4" src={'logo-light.png'} alt="Jeeth Logo" />
-            <p className="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas repudiandae pariatur culpa quam est, earum beatae fuga tenetur ad.</p>
+            <p className="text-sm text-gray-400">The world's first solution tailored for employee transportation service businesses, seamlessly integrating cutting-edge technology and financial innovations within a single platform.</p>
+            <div className="flex mt-4">
+              <Link href="#"><img width="24px" className="mr-6" src={'icons/social-facebook.svg'} alt="Facebook" /></Link>
+              <Link href="#"><img width="24px" className="mr-6" src={'icons/social-x.svg'} alt="X" /></Link>
+              <Link href="#"><img width="24px" className="mr-6" src={'icons/social-linkedin.svg'} alt="LinkedIn" /></Link>
+              <Link href="#"><img width="24px" className="mr-6" src={'icons/social-instagram.svg'} alt="Instagram" /></Link>
+            </div>
           </div>
 
           <div className="my-4">
-            <h3 className="mb-4 font-thin">Footer Links</h3>
-            <ul className="mt-2 text-sm text-gray-500">
-              <li className="text-sm mb-2"><Link href="#">Home</Link></li>
-              <li className="text-sm mb-2"><Link href="#">About Us</Link></li>
+            <h3 className="mb-4 font-medium">Quick Links</h3>
+            <ul className="mt-2 text-sm text-gray-400">
+              <li className="text-sm mb-2"><Link href="#">About</Link></li>
+              <li className="text-sm mb-2"><Link href="#">Solution</Link></li>
               <li className="text-sm mb-2"><Link href="#">Blog</Link></li>
-              <li className="text-sm mb-2"><Link href="#">Sell</Link></li>
-              <li className="text-sm mb-2"><Link href="#">Contact Us</Link></li>
+              <li className="text-sm mb-2"><Link href="#">Privacy Policy</Link></li>
+              <li className="text-sm mb-2"><Link href="#">Terms & Condition</Link></li>
             </ul>
           </div>
 
           <div className="my-4">
-            <h3 className="mb-4 font-thin">Contact Us</h3>
+            <h3 className="mb-4 font-medium">Contact Us</h3>
             <div className="h-full flex flex-col gap-2">
               <div className="flex flex-col gap-2">
-                <p className="text-sm text-gray-500">(+234) 137632128</p>
-                <p className="text-sm text-gray-500">grasshopper@gmail.com</p>
-                <p className="text-sm text-gray-500">Address goes here</p>
-              </div>
-              <div className="mt-auto">
-                <Link className="text-sm text-gray-500" href="#">Download Our App</Link>
+                <p className="text-sm text-gray-400">+91 8220 151 247</p>
+                <p className="text-sm text-gray-400">contact@jeeth.co.in</p>
+                <p className="text-sm text-gray-400 mt-6">3rd Floor, P.No 38, Sridevi Arcade,<br/>JNTU, Kukatpally, Hyderabad - 500085 </p>
               </div>
             </div>
           </div>
 
           <div className="my-4">
-            <h3 className="font-thin">Footer Nav</h3>
+            <h3 className="font-medium">Download the apps</h3>
+            <div className="mt-6 flex flex-col gap-4">
+                <Link className="text-sm text-gray-400" href="#">
+                  <img src={'icons/app-playstore.svg'} alt="Google Play" />
+                </Link>
+                <Link className="text-sm text-gray-400" href="#">
+                  <img src={'icons/app-appstore.svg'} alt="Apple App Store" />
+                </Link>
+            </div>
           </div>
         </div>
 
-        <div className="mt-8 text-xs text-gray-500">
-          &copy; 2023. All rights reserved.
+        <div className="mt-8 text-xs text-gray-400">
+          &copy; 2024 | Jeeth Balaji Tech Pvt Ltd.
         </div>
       </div>
 
