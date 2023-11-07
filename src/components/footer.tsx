@@ -20,11 +20,11 @@ export const Footer = () => {
           <div className="my-4">
             <h3 className="mb-4 font-medium">Quick Links</h3>
             <ul className="mt-2 text-sm text-gray-400">
-              <li className="text-sm mb-2"><Link href="#">About</Link></li>
-              <li className="text-sm mb-2"><Link href="#">Solution</Link></li>
+              <li className="text-sm mb-2"><Link href="/about">About</Link></li>
+              <li className="text-sm mb-2"><Link href="/solution">Solution</Link></li>
               <li className="text-sm mb-2"><Link href="#">Blog</Link></li>
-              <li className="text-sm mb-2"><Link href="#">Privacy Policy</Link></li>
-              <li className="text-sm mb-2"><Link href="#">Terms & Condition</Link></li>
+              <li className="text-sm mb-2"><Link href="/privacy-policy">Privacy Policy</Link></li>
+              <li className="text-sm mb-2"><Link href="terms">Terms & Condition</Link></li>
             </ul>
           </div>
 
