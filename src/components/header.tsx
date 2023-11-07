@@ -5,7 +5,7 @@ export const Header = () => {
   const navLinks = [
     { title: 'Home', path: '/' },
     { title: 'About', path: '/about' },
-    { title: 'Solution', path: '/#solution' },
+    { title: 'Solution', path: '/solution' },
     { title: 'Contact', path: '/contact' },
     { title: 'Try Demo', path: '/try-demo' },
   ]

@@ -24,7 +24,7 @@ export const Footer = () => {
               <li className="text-sm mb-2"><Link href="/solution">Solution</Link></li>
               <li className="text-sm mb-2"><Link href="#">Blog</Link></li>
               <li className="text-sm mb-2"><Link href="/privacy-policy">Privacy Policy</Link></li>
-              <li className="text-sm mb-2"><Link href="terms">Terms & Condition</Link></li>
+              <li className="text-sm mb-2"><Link href="/terms">Terms & Condition</Link></li>
             </ul>
           </div>
 
