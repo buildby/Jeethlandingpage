@@ -1,3 +1,4 @@
+'use client';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 type Inputs = {
@@ -20,7 +21,7 @@ export default function ContactForm() {
   };
 
   return (
-      <form onSubmit={handleSubmit(onSubmit)} className="mx-auto w-full md:w-1/2 mb-8">
+      <form onSubmit={handleSubmit(onSubmit)} className="mx-auto p-4">
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 text-sm">Name</label>
           <input

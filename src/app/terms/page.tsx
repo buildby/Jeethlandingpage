@@ -1,3 +1,6 @@
+import ContactForm from "../../components/contact-form";
+import { NewsLetter } from "../../components/news-letter";
+
 export default function TermsPage() {
 
   return (
@@ -61,7 +64,37 @@ export default function TermsPage() {
           </div>
         </div>
       </section>
-      
+
+      <section className="mx-auto bg-primary relative">
+        <div className="relative">
+          <div className="w-full">
+            <img className="w-full" src="home/wave-inverted.svg" alt="" />
+          </div>
+        </div>
+        <div className="p-4 md:p-12 container mx-auto">
+          <h3 className="text-white text-2xl font-bold text-center mt-4 uppercase">Contact Us</h3>
+          <div className="bg-white my-4 w-[48px] h-[4px] rounded-lg m-auto"></div>
+          <div className="bg-white p-4 w-1/2 rounded-lg mx-auto my-6">
+            <ContactForm />
+          </div>
+          <img className="mx-auto mb-16" src="about/ye-jeeth-bharat-ki.png" alt="Ye Jeeth Bharat Ki!" />
+        </div>
+
+        <div className="min-h-[20px] md:min-h-[100px]"></div>
+        <div className="w-full absolute bottom-0">
+          <img className="w-full" src="home/wave.svg" alt="" />
+        </div>
+      </section>
+
+      <section className="mx-auto">
+        <div className="p-4 md:p-12 md:pt-0  container mx-auto">
+          <h3 className="text-primary text-2xl font-bold text-center">Subscribe our newsletter</h3>
+          <div className="bg-primary my-4 w-[48px] h-[4px] rounded-lg m-auto"></div>
+          <p className="text-secondary m-auto text-center md:w-1/2">Subscribe to our newsletter for daily/weekly<br />update of our products and services.</p>
+          <NewsLetter />
+        </div>
+      </section>
+
     </main>
   );
 }
