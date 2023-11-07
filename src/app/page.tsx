@@ -30,18 +30,18 @@ export default function HomePage() {
 
       <section className="">
         <div className="p-4 md:p-0 container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-          <img className="border rounded-3xl" src="home/road.png" alt="ETS Vendors" />
+          <img className="rounded-3xl" src="home/app-screenshot.png" alt="Jeeth Mobile App" />
           <div className="w-full">
-            <h3 className="text-primary text-2xl font-bold">Hello ETS Vendors!</h3>
+            <h3 className="text-primary text-2xl font-bold">What do we do?</h3>
             <div className="bg-primary w-[48px] h-[4px] rounded-lg"></div>
 
             <ul className="pl-4 my-8 w-full md:w-3/4 list-disc text-sm font-light flex flex-col justify-between">
-              <li className="mb-2">Empower your Driver Partners with immediate access to their earnings through JEETH. </li>
-              <li className="mb-2">Onboard driver partners to your new business opportunities with hassle free documentation and induction process.</li>
-              <li className="mb-0">List your onboarding campaigns with attractive fares & clear business model to attract and onboard driver partners from our massive inventory.</li>
+              <li className="mb-2">Enable your driver partners with <b className="font-semibold">instant access to their earnings</b> through our user-friendly mobile app. </li>
+              <li className="mb-2">Source verified driver partners with compliant vehicles through the <b className="font-semibold">world's first dedicated marketplace</b> for ETS segment.</li>
+              <li className="mb-0">Efficiently manage your entire operations using our <b className="font-semibold">advanced technology</b> suit.</li>
             </ul>
             <a href="#" className="mt-0 w-[fit-content] bg-secondary text-white text-lg font-semibold py-2 px-6 rounded-full hover:text-secondary hover:bg-primary hover:outline hover:outline-secondary transition-all">
-              Try Demo
+              Download the App
             </a>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="p-4 md:p-12 container mx-auto">
-          <h3 className="text-white text-2xl font-bold text-center">1000's Of happy drivers across the country.</h3>
+          <h3 className="text-white text-2xl font-bold text-center">Thousands Of happy drivers across the country.</h3>
           <div className="bg-white my-4 w-[48px] h-[4px] rounded-lg m-auto"></div>
           <p className="text-white m-auto text-center md:w-1/2">Yeah! we're proud with numbers. We've helped thousands of driver partners all around the world with our bespoke service. Hover ontop of them pic to view their testimonials.</p>
           <Testimonials />

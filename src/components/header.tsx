@@ -4,7 +4,7 @@ import React from 'react';
 export const Header = () => {
   const navLinks = [
     { title: 'Home', path: '/' },
-    { title: 'About', path: '/#about' },
+    { title: 'About', path: '/about' },
     { title: 'Solution', path: '/#solution' },
     { title: 'Contact', path: '/contact' },
     { title: 'Try Demo', path: '/try-demo' },
@@ -14,7 +14,7 @@ export const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-4 md:px-0">
         {/* Logo on the left */}
         <Link className="flex items-center" href={'/'}>
-          <img src="/logo.png" alt="Logo" className="" />
+          <img src="/logo.png" alt="Logo" className="h-[56px]" />
         </Link>
 
         <div className="flex items-center ">

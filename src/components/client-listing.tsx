@@ -118,7 +118,7 @@ const clientData: Client[] = [
 export const ClientListing = () => {
   return (
     <div className="rounded-xl bg-white p-4 md:p-8 md:w-[90%] mx-auto">
-      <h4 className="text-primary text-xl pb-8 font-bold text-center">Explore the Market Place on our app</h4>
+      <h4 className="text-primary text-xl pb-8 font-bold text-center">Glimpse of our marketplace.</h4>
 
       <div className="grid md:grid-cols-2 gap-4 md:gap-8">
         {clientData.map((client) => (ClientCard(client)))}
