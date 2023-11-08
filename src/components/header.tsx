@@ -41,8 +41,8 @@ export const Header = () => {
               }
             </nav>
 
-            <button onClick={openContactForm} className="text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover:border-b-primary">Contact</button>
-            <button onClick={openTryDemoForm} className="text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover:border-b-primary">Try Demo</button>
+            <button onClick={openContactForm} className="hidden md:block text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover:border-b-primary">Contact</button>
+            <button onClick={openTryDemoForm} className="hidden md:block text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover:border-b-primary">Try Demo</button>
             {/* Rounded background download button */}
             <Link href="#" className="bg-secondary text-white font-semibold ml-8 text-sm py-2 px-6 rounded-full  hover:bg-primary">
               Download
@@ -55,7 +55,7 @@ export const Header = () => {
       {isContactFormOpen && (
         <Modal onClose={closeContactForm}>
           <div className="flex flex-row bg-white">
-            <img src="modal-bg.png" alt="Empower your workforce" className="w-[305px]" />
+            <img className="hidden md:block w-[305px]" src="modal-bg.png" alt="Empower your workforce" />
             <ContactForm />
           </div>
         </Modal>
@@ -64,7 +64,7 @@ export const Header = () => {
       {isTryDemoFormOpen && (
         <Modal onClose={closeTryDemoForm}>
           <div className="flex flex-row bg-white">
-            <img src="modal-bg.png" alt="Empower your workforce" className="w-[305px]" />
+            <img className="hidden md:block w-[305px]" src="modal-bg.png" alt="Empower your workforce" />
             <TryDemoForm />
           </div>
         </Modal>
