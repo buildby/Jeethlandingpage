@@ -10,14 +10,17 @@ export const Header = () => {
     { title: 'Home', path: '/' },
     { title: 'About', path: '/about' },
     { title: 'Solution', path: '/solution' },
-  ]
-  const [isContactFormOpen, setIsContactFormOpen] = useState(true);
+  ];
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
   const openContactForm = () => setIsContactFormOpen(true);
   const closeContactForm = () => setIsContactFormOpen(false);
 
   const [isTryDemoFormOpen, setIsTryDemoFormOpen] = useState(false);
   const openTryDemoForm = () => setIsTryDemoFormOpen(true);
   const closeTryDemoForm = () => setIsTryDemoFormOpen(false);
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
     <>
@@ -28,29 +31,62 @@ export const Header = () => {
             <img src="/logo.png" alt="Logo" className="h-[56px]" />
           </Link>
 
-          <div className="flex items-center ">
+          <div className="md:hidden">
+            {/* Hamburger Menu Icon for Mobile */}
+            <button onClick={toggleMobileMenu} className="text-secondary text-2xl">
+              ☰
+            </button>
+          </div>
 
-            {/* Links on the right */}
-            <nav className="hidden md:block">
-              {
-                navLinks.map(link => (
-                  <Link href={link.path} key={link.title} className="text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover:border-b-primary">
-                    {link.title}
-                  </Link>
-                ))
-              }
+          <div className={`hidden md:flex items-center ${isMobileMenuOpen ? 'hidden' : ''}`}>
+            {/* Links on the right (for larger screens) */}
+            <nav>
+              {navLinks.map((link) => (
+                <Link
+                  href={link.path}
+                  key={link.title}
+                  className="text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover:border-b-primary"
+                >
+                  {link.title}
+                </Link>
+              ))}
             </nav>
 
-            <button onClick={openContactForm} className="hidden md:block text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover:border-b-primary">Contact</button>
-            <button onClick={openTryDemoForm} className="hidden md:block text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover:border-b-primary">Try Demo</button>
-            {/* Rounded background download button */}
-            <Link href="#" className="bg-secondary text-white font-semibold ml-8 text-sm py-2 px-6 rounded-full  hover:bg-primary">
+            <button onClick={openContactForm} className="text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover.border-b-primary">
+              Contact
+            </button>
+            <button onClick={openTryDemoForm} className="text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover.border-b-primary">
+              Try Demo
+            </button>
+
+            <Link href="#" className="bg-secondary text-white font-semibold ml-8 text-sm py-2 px-6 rounded-full hover:bg-primary">
               Download
             </Link>
-
           </div>
         </div>
       </header>
+
+      {isMobileMenuOpen && (
+        <div className="md:hidden">
+          <nav className="bg-white p-4 flex flex-col items-start">
+            {navLinks.map((link) => (
+              <Link href={link.path} key={link.title} className="block text-secondary font-semibold text-sm py-2 hover.border-b-2 hover.border-b-primary">
+                {link.title}
+              </Link>
+            ))}
+            <button onClick={openContactForm} className="text-secondary font-semibold text-sm py-2 hover:border-b-2 hover.border-b-primary">
+              Contact
+            </button>
+            <button onClick={openTryDemoForm} className="text-secondary font-semibold text-sm py-2 hover:border-b-2 hover.border-b-primary">
+              Try Demo
+            </button>
+
+            <Link href="#" className="bg-secondary text-white font-semibold text-sm py-2 px-6 rounded-full hover:bg-primary">
+              Download
+            </Link>
+          </nav>
+        </div>
+      )}
 
       {isContactFormOpen && (
         <Modal onClose={closeContactForm}>
@@ -71,4 +107,4 @@ export const Header = () => {
       )}
     </>
   );
-}
+};
