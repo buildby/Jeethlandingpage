@@ -21,7 +21,7 @@ export default function ContactForm() {
   };
 
   return (
-      <form onSubmit={handleSubmit(onSubmit)} className="mx-auto p-4">
+      <form onSubmit={handleSubmit(onSubmit)} className="p-4">
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 text-sm">Name</label>
           <input

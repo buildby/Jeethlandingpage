@@ -10,10 +10,8 @@ export const Header = () => {
     { title: 'Home', path: '/' },
     { title: 'About', path: '/about' },
     { title: 'Solution', path: '/solution' },
-    // { title: 'Contact', path: '/contact' },
-    // { title: 'Try Demo', path: '/try-demo' },
   ]
-  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+  const [isContactFormOpen, setIsContactFormOpen] = useState(true);
   const openContactForm = () => setIsContactFormOpen(true);
   const closeContactForm = () => setIsContactFormOpen(false);
 
@@ -56,13 +54,19 @@ export const Header = () => {
 
       {isContactFormOpen && (
         <Modal onClose={closeContactForm}>
-          <ContactForm />
+          <div className="flex flex-row bg-white">
+            <img src="modal-bg.png" alt="Empower your workforce" className="w-[305px]" />
+            <ContactForm />
+          </div>
         </Modal>
       )}
 
       {isTryDemoFormOpen && (
         <Modal onClose={closeTryDemoForm}>
-          <TryDemoForm />
+          <div className="flex flex-row bg-white">
+            <img src="modal-bg.png" alt="Empower your workforce" className="w-[305px]" />
+            <TryDemoForm />
+          </div>
         </Modal>
       )}
     </>
