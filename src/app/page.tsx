@@ -52,7 +52,7 @@ export default function HomePage() {
             <img className="w-full" src="home/wave-inverted.svg" alt="" />
           </div>
         </div>
-        <div className="md:my-8 md:p-4 p-4 my-4 container mx-auto md:py-16">
+        <div className="md:my-0 md:p-4 p-4 my-4 container mx-auto md:py-16">
           <ClientListing />
         </div>
       </section>

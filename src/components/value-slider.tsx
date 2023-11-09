@@ -60,7 +60,7 @@ export const ValueSlider = () => {
   const isBrowser = () => typeof window !== "undefined"
 
   return (
-    <div className="my-8">
+    <div className="mt-8">
       <Swiper
         spaceBetween={0}
         slidesPerView={isBrowser() && window.innerWidth > 768 ? 3 : 1}
