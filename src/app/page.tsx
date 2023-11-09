@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <main className="">
 
-      <section className="mb-8 text-white bg-primary relative">
+      <section className="mb-0 text-white bg-primary relative">
         <div className="p-4 md:p-0 container mx-auto grid md:grid-cols-2 overflow-hidden">
           <div className="flex flex-col py-8 md:py-16 order-2 md:order-1">
             <h2 className="mb-4 font-thin text-3xl">Are you an Employee Transportation Service provider?</h2>
@@ -35,7 +35,7 @@ export default function HomePage() {
             <h3 className="text-primary text-2xl font-bold">What do we do?</h3>
             <div className="bg-primary w-[48px] h-[4px] rounded-lg"></div>
 
-            <ul className="pl-4 my-8 w-full md:w-3/4 list-disc text-md font-light flex flex-col justify-between">
+            <ul className="pl-4 mt-8 w-full md:w-3/4 list-disc text-md font-light flex flex-col justify-between">
               <li className="mb-2">Enable your driver partners with <b className="font-semibold">instant access to their earnings</b> through our user-friendly mobile app. </li>
               <li className="mb-2">Source verified driver partners with compliant vehicles through the <b className="font-semibold">world's first dedicated marketplace</b> for ETS segment.</li>
               <li className="mb-0">Efficiently manage your entire operations using our <b className="font-semibold">advanced technology</b> suit.</li>

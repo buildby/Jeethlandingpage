@@ -42,27 +42,27 @@ export default function SolutionPage() {
             <div className="flex flex-col gap-4 items-center">
               <img className="max-h-[100px] mb-4 " src="solutions/icons/Check.png" alt="100% Compliant Vehicles" />
               <p className="font-bold text-md  text-secondary">100% Compliant Vehicles</p>
-              <p className="text-sm font-light text-secondary ">Stop chasing drivers,  launch a campaign on our marketplace to source instantly.</p>
+              <p className="text-sm font-light text-secondary ">We verify documents digitally using government-provided APIs to authenticate submitted documents.</p>
             </div>
             <div className="flex flex-col gap-4 items-center">
               <img className="max-h-[100px] mb-4 " src="solutions/icons/auto pay.png" alt="Enable Daily Payments" />
               <p className="font-bold text-md  text-secondary">Enable Daily Payments</p>
-              <p className="text-sm font-light text-secondary ">Stop chasing drivers,  launch a campaign on our marketplace to source instantly.</p>
+              <p className="text-sm font-light text-secondary ">We facilitate drivers with instant payment from the mobile app based on their earnings.</p>
             </div>
             <div className="flex flex-col gap-4 items-center">
               <img className="max-h-[100px] mb-4 " src="solutions/icons/auto pay-1.png" alt="Easy Repayments" />
               <p className="font-bold text-md  text-secondary">Easy Repayments</p>
-              <p className="text-sm font-light text-secondary ">Stop chasing drivers,  launch a campaign on our marketplace to source instantly.</p>
+              <p className="text-sm font-light text-secondary ">Repayment of the amounts withdrawn by drivers will be deducted from their monthly payouts.</p>
             </div>
             <div className="flex flex-col gap-4 items-center">
               <img className="max-h-[100px] mb-4 " src="solutions/icons/Check List.png" alt="Effortless Vehicle Induction" />
               <p className="font-bold text-md  text-secondary">Effortless Vehicle Induction</p>
-              <p className="text-sm font-light text-secondary ">Stop chasing drivers,  launch a campaign on our marketplace to source instantly.</p>
+              <p className="text-sm font-light text-secondary ">Repayment of the amounts withdrawn by drivers will be deducted from their monthly payouts.</p>
             </div>
             <div className="flex flex-col gap-4 items-center">
               <img className="max-h-[100px] mb-4 " src="solutions/icons/Cloud.png" alt="100% Paperless" />
               <p className="font-bold text-md  text-secondary">100% Paperless</p>
-              <p className="text-sm font-light text-secondary ">Stop chasing drivers,  launch a campaign on our marketplace to source instantly.</p>
+              <p className="text-sm font-light text-secondary ">Seamless digital process from onboarding to hassle-free repayments for utmost convenience.</p>
             </div>
           </div>
           
