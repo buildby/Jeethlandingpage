@@ -11,11 +11,11 @@ export default function HomePage() {
       <section className="mb-8 text-white bg-primary relative">
         <div className="p-4 md:p-0 container mx-auto grid md:grid-cols-2 overflow-hidden">
           <div className="flex flex-col py-8 md:py-16 order-2 md:order-1">
-            <h2 className="mb-4 font-thin text-3xl">Are you a driver?</h2>
-            <h3 className="mb-6 font-bold text-3xl">Access our marketplace with 1000's of ETS Vendors to work with.</h3>
+            <h2 className="mb-4 font-thin text-3xl">Are you an Employee Transportation Service provider?</h2>
+            <h3 className="mb-6 font-bold text-3xl"><i>Guess what?</i> You've just hit the jackpot!</h3>
 
-            <p className="font-extralight text-xl">100% transparency on the pricing and business model.</p>
-            <Button text="Downoad Now" link="#" className="mt-8" />
+            <p className="font-extralight text-xl">We help you revolutionize your transportation game with our cutting-edge technology and financial solutions.</p>
+            <Button text="Try Demo" link="#" className="mt-8" />
           </div>
           <div className="order-1 md:order-2 translate-x-[-40%] translate-y-[40%] md:translate-x-[-20%] md:translate-y-[30%]">
             <img className="scale-[1.7] md:scale-[1.5]" src="home/car-with-shadow-2.png" alt="" />
@@ -30,19 +30,17 @@ export default function HomePage() {
 
       <section className="">
         <div className="p-4 md:p-0 container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-          <img className="rounded-3xl" src="home/app-screenshot.png" alt="Jeeth Mobile App" />
+          <img className="rounded-3xl w-[400px]" src="home/app-screenshot.png" alt="Jeeth Mobile App" />
           <div className="w-full">
             <h3 className="text-primary text-2xl font-bold">What do we do?</h3>
             <div className="bg-primary w-[48px] h-[4px] rounded-lg"></div>
 
-            <ul className="pl-4 my-8 w-full md:w-3/4 list-disc text-sm font-light flex flex-col justify-between">
+            <ul className="pl-4 my-8 w-full md:w-3/4 list-disc text-md font-light flex flex-col justify-between">
               <li className="mb-2">Enable your driver partners with <b className="font-semibold">instant access to their earnings</b> through our user-friendly mobile app. </li>
               <li className="mb-2">Source verified driver partners with compliant vehicles through the <b className="font-semibold">world's first dedicated marketplace</b> for ETS segment.</li>
               <li className="mb-0">Efficiently manage your entire operations using our <b className="font-semibold">advanced technology</b> suit.</li>
+              <a href="#" className="mt-12 w-[fit-content] bg-secondary text-white text-lg font-semibold py-2 px-6 rounded-full hover:text-secondary hover:bg-primary hover:outline hover:outline-secondary transition-all">Download the App</a>
             </ul>
-            <a href="#" className="mt-0 w-[fit-content] bg-secondary text-white text-lg font-semibold py-2 px-6 rounded-full hover:text-secondary hover:bg-primary hover:outline hover:outline-secondary transition-all">
-              Download the App
-            </a>
           </div>
         </div>
 
