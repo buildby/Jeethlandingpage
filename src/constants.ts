@@ -1,0 +1,1 @@
+export const PORTAL_URL = process.env.PORTAL_URL || 'https://portal.jeeth.co.in';

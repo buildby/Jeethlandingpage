@@ -15,30 +15,30 @@ export const ValueSlider = () => {
   const slides: SlideCard[] = [
     {
       title: "Enhance Your Operations",
-      description: "Forget about payouts to your drivers and with our daily payments your driver partners will be happier than before to serve you better.",
+      description: "Let our Technology suite automate back office operations and let your team focus on what matters the most.",
       image: "home/slider/value-slider-1.png",
-      linkText: "Read More",
+      linkText: "Contact Now",
       link: "#"
     },
     {
       title: "Plug & Play Solution",
       description: "Unleash the power of JEETH in few simple steps. No hefty documentation and 100% Online.",
       image: "home/slider/value-slider-2.png",
-      linkText: "Get in Touch",
+      linkText: "Contact Now",
       link: "#"
     },
     {
-      title: "Always available Invntory",
-      description: "With our marketplace you dont need to worry about driver attrition, or new business opportunities etc. make a campaign and source unlimited drivers.",
+      title: "Always available Inventory",
+      description: "Run a sourcing campaign on our marketplace to seemlessly hire verified driver partners as and when required.",
       image: "home/slider/value-slider-3.png",
-      linkText: "Read More",
+      linkText: "Contact Now",
       link: "#"
     },
     {
       title: "Enhance Your Operations",
-      description: "Forget about payouts to your drivers and with our daily payments your driver partners will be happier than before to serve you better.",
+      description: "Let our Technology suite automate back office operations and let your team focus on what matters the most.",
       image: "home/slider/value-slider-1.png",
-      linkText: "Read More",
+      linkText: "Contact Now",
       link: "#"
     },
     {
@@ -49,10 +49,10 @@ export const ValueSlider = () => {
       link: "#"
     },
     {
-      title: "Always available Invntory",
-      description: "With our marketplace you dont need to worry about driver attrition, or new business opportunities etc. make a campaign and source unlimited drivers.",
+      title: "Always available Inventory",
+      description: "Run a sourcing campaign on our marketplace to seemlessly hire verified driver partners as and when required.",
       image: "home/slider/value-slider-3.png",
-      linkText: "Read More",
+      linkText: "Contact Now",
       link: "#"
     },
   ];
@@ -95,7 +95,7 @@ export const SlideCard = ({ data }: { data: SlideCard }) => {
       <img className={`m-auto transition-[width] duration-300 ${swiperSlide.isActive ? 'w-[250px]' : 'w-[180px]'}`} src={data.image} alt={data.title} />
       <h4 className={`${swiperSlide.isActive ? 'text-primary' : 'text-secondary'} text-xl font-bold my-4`}>{data.title}</h4>
       <p className="text-sm font-light mb-4">{data.description}</p>
-      <a href={data.link} className="mt-4 w-[fit-content] bg-secondary text-white text-lg font-semibold py-2 px-6 rounded-full hover:text-secondary hover:bg-primary hover:outline hover:outline-secondary transition-all">
+      <a href={data.link} className="mt-4 w-[fit-content] bg-secondary text-white text-lg font-semibold py-2 px-6 rounded-full hover:text-white hover:bg-primary transition-all">
         {data.linkText}
       </a>
     </div>

@@ -1,3 +1,5 @@
+'use client';
+import { useState } from "react";
 import { Button } from "../components/Button";
 import { ClientListing } from "../components/client-listing";
 import { NewsLetter } from "../components/news-letter";
@@ -5,6 +7,10 @@ import { Testimonials } from "../components/testimonials";
 import { ValueSlider } from "../components/value-slider";
 
 export default function HomePage() {
+  const [isTryDemoFormOpen, setIsTryDemoFormOpen] = useState(false);
+  const openTryDemoForm = () => setIsTryDemoFormOpen(true);
+  const closeTryDemoForm = () => setIsTryDemoFormOpen(false);
+
   return (
     <main className="">
 
@@ -15,7 +21,7 @@ export default function HomePage() {
             <h3 className="mb-6 font-bold text-3xl"><i>Guess what?</i> You've just hit the jackpot!</h3>
 
             <p className="font-extralight text-xl">We help you revolutionize your transportation game with our cutting-edge technology and financial solutions.</p>
-            <Button text="Try Demo" link="#" className="mt-8" />
+            <Button text="Try Demo" link="#" className="mt-8" onClick={openTryDemoForm} />
           </div>
           <div className="order-1 md:order-2 translate-x-[-40%] translate-y-[40%] md:translate-x-[-20%] md:translate-y-[30%]">
             <img className="scale-[1.7] md:scale-[1.5]" src="home/car-with-shadow-2.png" alt="" />
@@ -30,7 +36,7 @@ export default function HomePage() {
 
       <section className="">
         <div className="p-4 md:p-0 container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-          <img className="rounded-3xl w-[400px]" src="home/app-screenshot.png" alt="Jeeth Mobile App" />
+          <img className="rounded-3xl w-[450px]" src="home/app-screenshot.png" alt="Jeeth Mobile App" />
           <div className="w-full">
             <h3 className="text-primary text-2xl font-bold">What do we do?</h3>
             <div className="bg-primary w-[48px] h-[4px] rounded-lg"></div>
@@ -39,7 +45,7 @@ export default function HomePage() {
               <li className="mb-2">Enable your driver partners with <b className="font-semibold">instant access to their earnings</b> through our user-friendly mobile app. </li>
               <li className="mb-2">Source verified driver partners with compliant vehicles through the <b className="font-semibold">world's first dedicated marketplace</b> for ETS segment.</li>
               <li className="mb-0">Efficiently manage your entire operations using our <b className="font-semibold">advanced technology</b> suit.</li>
-              <a href="#" className="mt-12 w-[fit-content] bg-secondary text-white text-lg font-semibold py-2 px-6 rounded-full hover:text-secondary hover:bg-primary hover:outline hover:outline-secondary transition-all">Download the App</a>
+              <a target="_blank" href="https://drive.google.com/file/d/1eoJSy0vEkIVK2KHtYtQD-ek9g8lup1Tc/view?usp=sharing" className="mt-12 w-[fit-content] bg-secondary text-white text-lg font-semibold py-2 px-6 rounded-full hover:bg-primary hover:text-white transition-all">Download the App</a>
             </ul>
           </div>
         </div>
@@ -60,7 +66,7 @@ export default function HomePage() {
       <section className="p-4 md:p-0 mt-8 container mx-auto">
         <h3 className="text-primary text-2xl font-bold text-center">The Value We Add</h3>
         <div className="bg-primary my-4 w-[48px] h-[4px] rounded-lg m-auto"></div>
-        <p className="text-center">Get the best out of our product in premium.</p>
+        <p className="text-center">A dynamic, user-friendly solution designed to empower, engage,<br/> and retain your workforce effectively.</p>
         <ValueSlider />
       </section>
 
@@ -77,7 +83,7 @@ export default function HomePage() {
           <Testimonials />
         </div>
 
-        <div className="min-h-[20px] md:min-h-[100px]"></div>
+        <div className="min-h-[20px] md:min-h-[160px]"></div>
         <div className="w-full absolute bottom-0">
           <img className="w-full" src="home/wave.svg" alt="" />
         </div>

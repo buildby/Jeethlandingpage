@@ -42,10 +42,10 @@ export const Footer = () => {
           <div className="my-4">
             <h3 className="font-medium">Download the apps</h3>
             <div className="mt-6 flex flex-col gap-4">
-                <Link className="text-sm text-gray-400" href="#">
+                <Link className="text-sm text-gray-400" target="_blank" href="https://drive.google.com/file/d/1eoJSy0vEkIVK2KHtYtQD-ek9g8lup1Tc/view?usp=sharing">
                   <img src={'icons/app-playstore.svg'} alt="Google Play" />
                 </Link>
-                <Link className="text-sm text-gray-400" href="#">
+                <Link className="text-sm text-gray-400" target="_blank" href="#">
                   <img src={'icons/app-appstore.svg'} alt="Apple App Store" />
                 </Link>
             </div>

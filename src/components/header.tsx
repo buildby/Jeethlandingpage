@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Modal from './Modal';
 import ContactForm from './contact-form';
 import { TryDemoForm } from './try-demo-form';
+import { PORTAL_URL } from '../constants';
 
 export const Header = () => {
   const navLinks = [
@@ -59,7 +60,7 @@ export const Header = () => {
               Try Demo
             </button>
 
-            <Link href="#" className="bg-secondary text-white font-semibold ml-8 text-sm py-2 px-6 rounded-full hover:bg-primary">
+            <Link target="_blank" href={PORTAL_URL} className="bg-secondary text-white font-semibold ml-8 text-sm py-2 px-6 rounded-full hover:bg-primary">
               Download
             </Link>
           </div>

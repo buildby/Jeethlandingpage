@@ -8,31 +8,32 @@ type TestimonialCard = {
 }
 
 const testimonials: TestimonialCard[] = [
-  { name: "Jane", size: "w-[100px]", rating: 5, image: "home/testimonials/user-1.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "Allen", size: "w-[60px]", rating: 4, image: "home/testimonials/user-2.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "Dave", size: "w-[80px]", rating: 4, image: "home/testimonials/user-3.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "James", size: "w-[98px]", rating: 5, image: "home/testimonials/user-4.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "Jimmy", size: "w-[40px]", rating: 5, image: "home/testimonials/user-5.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "Jimmy", size: "w-[70px]", rating: 5, image: "home/testimonials/user-6.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "Fido", size: "w-[40px]", rating: 5, image: "home/testimonials/user-7.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "James", size: "w-[90px]", rating: 5, image: "home/testimonials/user-8.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "Jimmy", size: "w-[60px]", rating: 5, image: "home/testimonials/user-9.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "James", size: "w-[90px]", rating: 5, image: "home/testimonials/user-11.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "Fido", size: "w-[60px]", rating: 5, image: "home/testimonials/user-10.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "Oslo", size: "w-[50px]", rating: 4, image: "home/testimonials/user-13.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
-  { name: "Jimmy", size: "w-[80px]", rating: 5, image: "home/testimonials/user-12.png", title: "Wonderful service", description: "Good deal and very wonderful service thank you." },
+  { name: "Arjun Sharma", size: "w-[100px]", rating: 5, image: "home/testimonials/user-1.jiff", title: "Exceptional solution", description: "Gratitude for the daily payments, it's been a game-changer for me." },
+  { name: "Rajesh Patel", size: "w-[60px]", rating: 4, image: "home/testimonials/user-2.jiff", title: "Outstanding resolution", description: "Heartfelt thanks for the consistent daily support." },
+  { name: "Sanjay Verma", size: "w-[80px]", rating: 4, image: "home/testimonials/user-3.jiff", title: "Impressive solution", description: "Thank you for making my daily earnings management seamless and effective." },
+  { name: "Anand Mishra", size: "w-[98px]", rating: 5, image: "home/testimonials/user-4.jiff", title: "Remarkable solution", description: "I appreciate the daily payments, it has made a significant impact on my financial stability." },
+  { name: "Amit Kapoor", size: "w-[40px]", rating: 5, image: "home/testimonials/user-5.jiff", title: "Excellent resolution", description: "Managing my earnings has become much easier, all thanks to this solution." },
+  { name: "Harish Singh", size: "w-[70px]", rating: 5, image: "home/testimonials/user-6.jiff", title: "Fantastic solution", description: "Grateful for the daily payments that have positively influenced my financial situation." },
+  { name: "Rakesh Gupta", size: "w-[40px]", rating: 5, image: "home/testimonials/user-7.jiff", title: "Superb resolution", description: "This solution has truly transformed the way I handle my earnings on a daily basis." },
+  { name: "Prakash Reddy", size: "w-[90px]", rating: 5, image: "home/testimonials/user-8.jiff", title: "Exceptional solution", description: "Heartening to experience the positive impact on my daily finances. Thank you!" },
+  { name: "Vinod Kumar", size: "w-[60px]", rating: 5, image: "home/testimonials/user-9.jiff", title: "Wonderful resolution", description: "The daily payments have been a blessing, and I'm genuinely thankful for this solution." },
+  { name: "Manoj Tiwari", size: "w-[60px]", rating: 5, image: "home/testimonials/user-10.jiff", title: "Brilliant solution", description: "Managing my earnings has become a breeze, and the daily payments are much appreciated." },
+  { name: "Naveen Choudhary", size: "w-[90px]", rating: 5, image: "home/testimonials/user-11.jiff", title: "Effective resolution", description: "Thankful for the daily support that has made a significant difference in my financial routine." },
+  { name: "Arvind Yadav", size: "w-[50px]", rating: 4, image: "home/testimonials/user-13.jiff", title: "Terrific solution", description: "I am sincerely grateful for the consistent daily payments, making life much more manageable." },
+  { name: "Sunil Raj", size: "w-[80px]", rating: 5, image: "home/testimonials/user-12.jiff", title: "Marvelous resolution", description: "This solution has made a positive impact on my financial stability, and I'm thankful for the daily payments." },
+  { name: "Vivek Sharma", size: "w-[90px]", rating: 5, image: "home/testimonials/user-14.jiff", title: "Exceptional solution", description: "Heartfelt gratitude for the daily payments, which have been a source of great support in managing my earnings effectively." },
 ]
 
 export const Testimonials = () => {
 
   return (
-    <div className="flex flex-wrap items-center justify-center my-8 gap-y-6 gap-x-12 md:px-28">
+    <div className="flex flex-wrap items-center justify-center my-8 gap-y-12 gap-x-24">
 
       {
         testimonials.map((t, i) => {
           return (
             <div className={`${t.size} group/testimonial hover:cursor-pointer relative`} key={t.image}>
-              <img src={t.image} alt={t.name}/>
+              <img className="rounded-full object-cover aspect-square" src={t.image} alt={t.name}/>
               <div className={`hidden group-hover/testimonial:flex z-10 absolute md:translate-y-[-50%] md:translate-x-[20%]
               ${i == 3 ? 'flex' : 'hidden '
               }`}>

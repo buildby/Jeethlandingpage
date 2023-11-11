@@ -6,14 +6,14 @@ export const Button = ({ text, link, className, onClick }: {
   className?: string
   onClick?: () => void
 }) => {
-  const defaultClass = "w-[fit-content] bg-secondary text-white text-md md:text-lg font-semibold py-2 px-6 rounded-full border-2 border-transparent hover:text-secondary hover:bg-primary hover:border-secondary transition-all"
+  const defaultClass = "w-[fit-content] bg-secondary text-white text-md md:text-lg font-semibold py-2 px-6 rounded-full border-2 border-transparent hover:text-secondary hover:bg-primary hover:border-white hover:text-white transition-all"
   if (link) {
     return (
-      <Link href={link} className={`${className} ${defaultClass}`} > {text} </Link>
+      <Link href={link} className={`${defaultClass} ${className}`} > {text} </Link>
     );
   } else if (onClick) {
     return (
-      <button onClick={onClick} className={`${className} ${defaultClass}`}> {text}</button>
+      <button onClick={onClick} className={`${defaultClass} ${className}`}> {text}</button>
     )
   } else {
     return null;
