@@ -74,7 +74,7 @@ export default function TermsPage() {
         <div className="p-4 md:p-12 container mx-auto">
           <h3 className="text-white text-2xl font-bold text-center mt-4 uppercase">Contact Us</h3>
           <div className="bg-white my-4 w-[48px] h-[4px] rounded-lg m-auto"></div>
-          <div className="bg-white p-4 w-1/2 rounded-lg mx-auto my-6">
+          <div className="bg-white p-4 md:w-1/2 rounded-lg mx-auto my-6">
             <ContactForm />
           </div>
           <img className="mx-auto mb-16" src="about/ye-jeeth-bharat-ki.png" alt="Ye Jeeth Bharat Ki!" />
