@@ -91,7 +91,7 @@ export const SlideCard = ({ data }: { data: SlideCard }) => {
   const swiperSlide = useSwiperSlide();
 
   return (    
-    <div className={`rounded-2xl p-12 border ${swiperSlide.isActive ? 'shadow-md border-primary bg-white w-100' : 'bg-slate-50'}`}>
+    <div className={`rounded-2xl p-12 border ${swiperSlide.isActive ? 'shadow-md border-primary bg-white w-100' : 'bg-slate-50'} text-center`}>
       <img className={`m-auto transition-[width] duration-300 ${swiperSlide.isActive ? 'w-[250px]' : 'w-[180px]'}`} src={data.image} alt={data.title} />
       <h4 className={`${swiperSlide.isActive ? 'text-primary' : 'text-secondary'} text-xl font-bold my-4`}>{data.title}</h4>
       <p className="text-sm font-light mb-4">{data.description}</p>

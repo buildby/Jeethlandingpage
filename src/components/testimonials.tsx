@@ -27,7 +27,7 @@ const testimonials: TestimonialCard[] = [
 export const Testimonials = () => {
 
   return (
-    <div className="flex flex-wrap items-center justify-center my-8 gap-y-12 gap-x-24">
+    <div className="flex flex-wrap items-center justify-center my-8 gap-y-12 gap-x-12 md:gap-x-24">
 
       {
         testimonials.map((t, i) => {

@@ -133,11 +133,11 @@ export const ClientCard = (clientData: Client) => {
       <img className="w-10 md:w-16 mr-2 md:mr-4" src={clientData.clientImage} alt={clientData.clientName} />
 
       <div className="flex-1 text-sm">
-        <p className="mb-2 w-40 md:w-48 truncate">Vendor: <b>{clientData.vendor}</b></p>
+        <p className="text-xs mb-2 w-40 md:w-48 truncate">Vendor: <b>{clientData.vendor}</b></p>
         <p className="flex gap-1"><Rating rating={clientData.rating} /> {clientData.vehicleTypes.map((vehicle) => <>{vehicle.type}: <b>{vehicle.quantity}</b> </>)}</p>
       </div>
     
-      <a className="border border-gray-300 rounded block p-2 text-sm" href="#">
+      <a className="text-xs border border-gray-300 rounded block p-2" href="#">
         Avg Fare <br/><span className="font-bold text-primary group-hover:text-white">Rs. {clientData.avgFare}*</span>
       </a>
     </div>
