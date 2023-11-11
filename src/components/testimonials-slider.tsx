@@ -7,53 +7,46 @@ type SlideCard = {
   image: string;
   title: string;
   description: string;
-  linkText: string;
-  link: string;
+  companyName: string;
 }
 
 export const TestimonialsSlider = () => {
   const slides: SlideCard[] = [
     {
-      title: "Enhance Your Operations",
-      description: "Forget about payouts to your drivers and with our daily payments your driver partners will be happier than before to serve you better.",
-      image: "home/slider/value-slider-1.png",
-      linkText: "Read More",
-      link: "#"
+      title: "Mr. Kiran Kumar",
+      description: "Jeeth changed the way we operate the business, we have seen dramatic change in our numbers. Kudos Team!",
+      image: "solutions/testimonials/client-testimonial-1.png",
+      companyName: "Srinivasa Logistics",
     },
     {
-      title: "Plug & Play Solution",
-      description: "Unleash the power of JEETH in few simple steps. No hefty documentation and 100% Online.",
-      image: "home/slider/value-slider-2.png",
-      linkText: "Get in Touch",
-      link: "#"
+      title: "Mr. Ranjeeth Reddy",
+      description: "My business performance has been increased like never before. Thanks Team Jeeth!",
+      image: "solutions/testimonials/client-testimonial-1.png",
+      companyName: "AU Logistics",
     },
     {
-      title: "Always available Invntory",
-      description: "With our marketplace you dont need to worry about driver attrition, or new business opportunities etc. make a campaign and source unlimited drivers.",
-      image: "home/slider/value-slider-3.png",
-      linkText: "Read More",
-      link: "#"
+      title: "Mr. Vikas",
+      description: "We are able to streamline our business operations using Jeeth Dashboard.",
+      image: "solutions/testimonials/client-testimonial-1.png",
+      companyName: "Vennela Logistics",
     },
     {
-      title: "Enhance Your Operations",
-      description: "Forget about payouts to your drivers and with our daily payments your driver partners will be happier than before to serve you better.",
-      image: "home/slider/value-slider-1.png",
-      linkText: "Read More",
-      link: "#"
+      title: "Mr. Kiran Kumar",
+      description: "Jeeth changed the way we operate the business, we have seen dramatic change in our numbers. Kudos Team!",
+      image: "solutions/app-mockup.png",
+      companyName: "Srinivasa Logistics",
     },
     {
-      title: "Plug & Play Solution",
-      description: "Unleash the power of JEETH in few simple steps. No hefty documentation and 100% Online.",
-      image: "home/slider/value-slider-2.png",
-      linkText: "Get in Touch",
-      link: "#"
+      title: "Mr. Ranjeeth Reddy",
+      description: "My business performance has been increased like never before. Thanks Team Jeeth!",
+      image: "solutions/testimonials/client-testimonial-1.png",
+      companyName: "AU Logistics",
     },
     {
-      title: "Always available Invntory",
-      description: "With our marketplace you dont need to worry about driver attrition, or new business opportunities etc. make a campaign and source unlimited drivers.",
-      image: "home/slider/value-slider-3.png",
-      linkText: "Read More",
-      link: "#"
+      title: "Mr. Vikas",
+      description: "We are able to streamline our business operations using Jeeth Dashboard.",
+      image: "solutions/testimonials/client-testimonial-1.png",
+      companyName: "Vennela Logistics",
     },
   ];
 
@@ -92,12 +85,12 @@ const SlideCard = ({ data }: { data: SlideCard }) => {
 
   return (    
     <div className={`rounded-2xl p-12 border ${swiperSlide.isActive ? 'shadow-md border-primary bg-white w-100' : 'bg-slate-50'}`}>
-      <img className={`m-auto transition-[width] duration-300 ${swiperSlide.isActive ? 'w-[250px]' : 'w-[180px]'}`} src={data.image} alt={data.title} />
-      <h4 className={`${swiperSlide.isActive ? 'text-primary' : 'text-secondary'} text-xl font-bold my-4`}>{data.title}</h4>
-      <p className="text-sm font-light mb-4">{data.description}</p>
-      <a href={data.link} className="mt-4 w-[fit-content] bg-secondary text-white text-lg font-semibold py-2 px-6 rounded-full hover:text-secondary hover:bg-primary hover:outline hover:outline-secondary transition-all">
-        {data.linkText}
-      </a>
+      <img className={`m-auto transition-[width]  border-4 border-primary object-cover aspect-square rounded-full duration-300 ${swiperSlide.isActive ? 'w-[250px]' : 'w-[180px]'}`} src={data.image} alt={data.title} />
+      <h4 className={`${swiperSlide.isActive ? 'text-primary' : 'text-secondary'} text-center text-xl font-bold my-4`}>{data.title}</h4>
+      <p className="text-sm text-center font-light mb-4">{data.description}</p>
+      <p className="mt-4 text-red-500 text-sm text-center font-semibold py-2">
+        {data.companyName}
+      </p>
     </div>
   )
 }

@@ -7,13 +7,13 @@ export default function SolutionPage() {
     <main className="">
 
       <section className="mb-0 text-white bg-primary relative">
-        <div className="p-4 md:p-0 container mx-auto grid md:grid-cols-3 overflow-hidden">
-          <div className="col-span-2 mt-12 flex flex-col py-8 md:py-16 order-2 md:order-1">
-            <h2 className="mb-4 font-thin text-3xl">Cutting-edge technology solutions to address <b className="font-semibold">capital and driver churn</b> issues in the Employee Transportation service segment.</h2>
+        <div className="p-4 md:p-0 container mx-auto grid grid-cols-1 md:grid-cols-3 overflow-hidden">
+          <div className="col-span-2 mt-0 md:mt-12 flex flex-col py-8 md:py-16 order-2 md:order-1">
+            <h2 className="mb-4 font-thin text-3xl leading-10">Cutting-edge technology solutions to address <b className="font-semibold">capital and driver churn</b> issues in the Employee Transportation service segment.</h2>
             <Button text="Try Demo" link="#" className="mt-8" />
           </div>
           <div className="order-1 md:order-2">
-            <img className="mt-8 md:ml-auto" src="solutions/app-mockup.png" alt="" />
+            <img className="w-[250px] md:w-auto mt-8 md:ml-auto mx-auto" src="solutions/app-mockup.png" alt="" />
           </div>
         </div>
 
@@ -28,7 +28,7 @@ export default function SolutionPage() {
 
           <div className="md:w-5/6 mx-auto">
             <div className="mx-auto grid items-center">
-              <h3 className="text-primary text-2xl font-bold uppercase">Our Offerings</h3>
+              <h3 className="text-primary text-2xl font-bold uppercase text-center">Our Offerings</h3>
               <div className="bg-primary my-4 w-[48px] h-[4px] rounded-lg m-auto"></div>
             </div>
           </div>
@@ -37,32 +37,32 @@ export default function SolutionPage() {
             <div className="flex flex-col gap-4 items-center">
               <img className="max-h-[100px] mb-4 " src="solutions/icons/Cab.png" alt="Source Online" />
               <p className="font-bold text-md text-secondary">Source Online</p>
-              <p className="text-sm font-light text-secondary ">Stop chasing drivers,  launch a campaign on our marketplace to source instantly.</p>
+              <p className="text-sm font-light text-secondary text-center">Stop chasing drivers,  launch a campaign on our marketplace to source instantly.</p>
             </div>
             <div className="flex flex-col gap-4 items-center">
               <img className="max-h-[100px] mb-4 " src="solutions/icons/Check.png" alt="100% Compliant Vehicles" />
               <p className="font-bold text-md  text-secondary">100% Compliant Vehicles</p>
-              <p className="text-sm font-light text-secondary ">We verify documents digitally using government-provided APIs to authenticate submitted documents.</p>
+              <p className="text-sm font-light text-secondary text-center">We verify documents digitally using government-provided APIs to authenticate submitted documents.</p>
             </div>
             <div className="flex flex-col gap-4 items-center">
               <img className="max-h-[100px] mb-4 " src="solutions/icons/auto pay.png" alt="Enable Daily Payments" />
               <p className="font-bold text-md  text-secondary">Enable Daily Payments</p>
-              <p className="text-sm font-light text-secondary ">We facilitate drivers with instant payment from the mobile app based on their earnings.</p>
+              <p className="text-sm font-light text-secondary text-center">We facilitate drivers with instant payment from the mobile app based on their earnings.</p>
             </div>
             <div className="flex flex-col gap-4 items-center">
               <img className="max-h-[100px] mb-4 " src="solutions/icons/auto pay-1.png" alt="Easy Repayments" />
               <p className="font-bold text-md  text-secondary">Easy Repayments</p>
-              <p className="text-sm font-light text-secondary ">Repayment of the amounts withdrawn by drivers will be deducted from their monthly payouts.</p>
+              <p className="text-sm font-light text-secondary text-center">Repayment of the amounts withdrawn by drivers will be deducted from their monthly payouts.</p>
             </div>
             <div className="flex flex-col gap-4 items-center">
               <img className="max-h-[100px] mb-4 " src="solutions/icons/Check List.png" alt="Effortless Vehicle Induction" />
               <p className="font-bold text-md  text-secondary">Effortless Vehicle Induction</p>
-              <p className="text-sm font-light text-secondary ">Repayment of the amounts withdrawn by drivers will be deducted from their monthly payouts.</p>
+              <p className="text-sm font-light text-secondary text-center">Repayment of the amounts withdrawn by drivers will be deducted from their monthly payouts.</p>
             </div>
             <div className="flex flex-col gap-4 items-center">
               <img className="max-h-[100px] mb-4 " src="solutions/icons/Cloud.png" alt="100% Paperless" />
               <p className="font-bold text-md  text-secondary">100% Paperless</p>
-              <p className="text-sm font-light text-secondary ">Seamless digital process from onboarding to hassle-free repayments for utmost convenience.</p>
+              <p className="text-sm font-light text-secondary text-center">Seamless digital process from onboarding to hassle-free repayments for utmost convenience.</p>
             </div>
           </div>
           
@@ -90,12 +90,12 @@ export default function SolutionPage() {
                 <p className="font-bold text-md  text-white">Improved Driver Productivity</p>
               </div>
               <div className="flex flex-col gap-4 items-center">
-                <img className="max-h-[100px] mb-4 " src="solutions/icons/Money.png" alt="Optimized Costs" />
-                <p className="font-bold text-md  text-white">Optimized Costs</p>
+                <img className="max-h-[100px] mb-4 " src="solutions/icons/Money.png" alt="Optimized Costs & Better Profits" />
+                <p className="font-bold text-md  text-white">Optimized Costs & Better Profits</p>
               </div>
               <div className="flex flex-col gap-4 items-center">
-                <img className="max-h-[100px] mb-4 " src="solutions/icons/New Job.png" alt="Increased Opportunities" />
-                <p className="font-bold text-md  text-white">Increased Opportunities</p>
+                <img className="max-h-[100px] mb-4 " src="solutions/icons/New Job.png" alt="Increased Business Opportunities" />
+                <p className="font-bold text-md  text-white">Increased Business Opportunities</p>
               </div>
               <div className="flex flex-col gap-4 items-center">
                 <img className="max-h-[100px] mb-4 " src="solutions/icons/Personal Growth.png" alt="Higher Retention" />

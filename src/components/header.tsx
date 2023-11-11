@@ -60,8 +60,8 @@ export const Header = () => {
               Try Demo
             </button>
 
-            <Link target="_blank" href={PORTAL_URL} className="bg-secondary text-white font-semibold ml-8 text-sm py-2 px-6 rounded-full hover:bg-primary">
-              Download
+            <Link target="_blank" href={PORTAL_URL} className="bg-primary text-white font-semibold ml-8 text-sm py-2 px-6 rounded-full hover:bg-secondary">
+              Login
             </Link>
           </div>
         </div>
