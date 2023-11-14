@@ -30,24 +30,6 @@ export const TestimonialsSlider = () => {
       image: "solutions/testimonials/client-testimonial-1.png",
       companyName: "Vennela Logistics",
     },
-    {
-      title: "Mr. Kiran Kumar",
-      description: "Jeeth changed the way we operate the business, we have seen dramatic change in our numbers. Kudos Team!",
-      image: "solutions/app-mockup.png",
-      companyName: "Srinivasa Logistics",
-    },
-    {
-      title: "Mr. Ranjeeth Reddy",
-      description: "My business performance has been increased like never before. Thanks Team Jeeth!",
-      image: "solutions/testimonials/client-testimonial-1.png",
-      companyName: "AU Logistics",
-    },
-    {
-      title: "Mr. Vikas",
-      description: "We are able to streamline our business operations using Jeeth Dashboard.",
-      image: "solutions/testimonials/client-testimonial-1.png",
-      companyName: "Vennela Logistics",
-    },
   ];
 
   const isBrowser = () => typeof window !== "undefined"
@@ -58,12 +40,13 @@ export const TestimonialsSlider = () => {
         spaceBetween={0}
         slidesPerView={isBrowser() && window.innerWidth > 768 ? 3 : 1}
         draggable={true}
-        loop={true}
-        autoplay= {{
-          delay: 1000,
-          pauseOnMouseEnter: true,
-        }}
+        // loop={true}
+        // autoplay= {{
+        //   delay: 1000,
+        //   pauseOnMouseEnter: true,
+        // }}
         centeredSlides={true}
+        initialSlide={1}
         grabCursor={true}
         wrapperClass="flex items-center"
         className="p-8"

@@ -27,21 +27,6 @@ export const ValueSlider = () => {
       description: "Run a sourcing campaign on our marketplace to seemlessly hire verified driver partners as and when required.",
       image: "home/slider/value-slider-3.png",
     },
-    {
-      title: "Enhance Your Operations",
-      description: "Let our Technology suite automate back office operations and let your team focus on what matters the most.",
-      image: "home/slider/value-slider-1.png",
-    },
-    {
-      title: "Plug & Play Solution",
-      description: "Unleash the power of JEETH in few simple steps. No hefty documentation and 100% Online.",
-      image: "home/slider/value-slider-2.png",
-    },
-    {
-      title: "Always available Inventory",
-      description: "Run a sourcing campaign on our marketplace to seemlessly hire verified driver partners as and when required.",
-      image: "home/slider/value-slider-3.png",
-    },
   ];
 
   const isBrowser = () => typeof window !== "undefined"
@@ -52,12 +37,13 @@ export const ValueSlider = () => {
         spaceBetween={0}
         slidesPerView={isBrowser() && window.innerWidth > 768 ? 3 : 1}
         draggable={true}
-        loop={true}
-        autoplay= {{
-          delay: 1000,
-          pauseOnMouseEnter: true,
-        }}
+        // loop={true}
+        // autoplay= {{
+        //   delay: 1000,
+        //   pauseOnMouseEnter: true,
+        // }}
         centeredSlides={true}
+        initialSlide={1}
         grabCursor={true}
         wrapperClass="flex items-center"
         className="p-8"

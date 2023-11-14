@@ -32,7 +32,7 @@ export const Testimonials = () => {
       {
         testimonials.map((t, i) => {
           return (
-            <div className={`${t.size} group/testimonial hover:cursor-pointer relative`} key={t.image}>
+            <div className={`${t.size} group/testimonial hover:cursor-pointer relative`} key={t.name}>
               <img className="rounded-full object-cover aspect-square" src={t.image} alt={t.name}/>
               <div className={`hidden group-hover/testimonial:flex z-10 absolute md:translate-y-[-50%] md:translate-x-[20%]
               ${i == 3 ? 'flex' : 'hidden '
