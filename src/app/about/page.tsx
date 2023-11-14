@@ -1,4 +1,5 @@
 import { Button } from "../../components/Button";
+import { ContactFormOpenButton } from "../../components/ContactFormOpenButton";
 import { NewsLetter } from "../../components/news-letter";
 
 export default function AboutPage() {
@@ -11,7 +12,7 @@ export default function AboutPage() {
             <h2 className="mb-4 font-thin text-3xl">Empowering India's Blue Collar Workforce:</h2>
             <h3 className="mb-6 font-bold text-3xl">Bridging Opportunities, Transforming Lives</h3>
 
-            <Button text="Try Demo" link="#" className="mt-8" />
+            <ContactFormOpenButton text="Try Demo" className="mt-8" />
           </div>
           <div className="order-1 md:order-2">
             <img className="mt-8 ml-auto" src="about/atf.svg" alt="" />

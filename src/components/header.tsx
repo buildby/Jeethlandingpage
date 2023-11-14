@@ -4,21 +4,28 @@ import React, { useState } from 'react';
 import Modal from './Modal';
 import ContactForm from './contact-form';
 import { TryDemoForm } from './try-demo-form';
-import { PORTAL_URL } from '../constants';
+import { useDispatch, useSelector } from 'react-redux';
+import { closeContactForm, closeTryDemoForm, openContactForm, openTryDemoForm, selectIsContactFormModalOpen, selectIsTryDemoFormModalOpen } from '../store/slices/modal.slice';
 
 export const Header = () => {
+  const isContactFormOpen = useSelector(selectIsContactFormModalOpen);
+  const isTryDemoFormOpen = useSelector(selectIsTryDemoFormModalOpen);
+
+  const dispatch = useDispatch();
+
   const navLinks = [
     { title: 'Home', path: '/' },
     { title: 'About', path: '/about' },
     { title: 'Solution', path: '/solution' },
   ];
-  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
-  const openContactForm = () => setIsContactFormOpen(true);
-  const closeContactForm = () => setIsContactFormOpen(false);
 
-  const [isTryDemoFormOpen, setIsTryDemoFormOpen] = useState(false);
-  const openTryDemoForm = () => setIsTryDemoFormOpen(true);
-  const closeTryDemoForm = () => setIsTryDemoFormOpen(false);
+  /* Contact Form */
+  const openContactFormModal = () => dispatch(openContactForm());
+  const closeContactModal = () => dispatch(closeContactForm());
+
+  /* Try Demo Form */
+  const openTryDemoFormModal = () => dispatch(openTryDemoForm());
+  const closeTryDemoModal = () => dispatch(closeTryDemoForm());
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -53,10 +60,10 @@ export const Header = () => {
               ))}
             </nav>
 
-            <button onClick={openContactForm} className="text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover.border-b-primary">
+            <button onClick={openContactFormModal} className="text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover.border-b-primary">
               Contact
             </button>
-            <button onClick={openTryDemoForm} className="text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover.border-b-primary">
+            <button onClick={openTryDemoFormModal} className="text-secondary font-semibold text-sm mx-4 py-2 hover:border-b-2 hover.border-b-primary">
               Try Demo
             </button>
 
@@ -75,10 +82,10 @@ export const Header = () => {
                 {link.title}
               </Link>
             ))}
-            <button onClick={openContactForm} className="text-secondary font-semibold text-sm py-2 hover:border-b-2 hover.border-b-primary">
+            <button onClick={openContactFormModal} className="text-secondary font-semibold text-sm py-2 hover:border-b-2 hover.border-b-primary">
               Contact
             </button>
-            <button onClick={openTryDemoForm} className="text-secondary font-semibold text-sm py-2 hover:border-b-2 hover.border-b-primary">
+            <button onClick={openTryDemoFormModal} className="text-secondary font-semibold text-sm py-2 hover:border-b-2 hover.border-b-primary">
               Try Demo
             </button>
 
@@ -90,7 +97,7 @@ export const Header = () => {
       )}
 
       {isContactFormOpen && (
-        <Modal onClose={closeContactForm}>
+        <Modal onClose={closeContactModal}>
           <div className="flex flex-row bg-white">
             <img className="hidden md:block w-[305px]" src="modal-bg.png" alt="Empower your workforce" />
             <ContactForm />
@@ -99,7 +106,7 @@ export const Header = () => {
       )}
 
       {isTryDemoFormOpen && (
-        <Modal onClose={closeTryDemoForm}>
+        <Modal onClose={closeTryDemoModal}>
           <div className="flex flex-row bg-white">
             <img className="hidden md:block w-[305px]" src="modal-bg.png" alt="Empower your workforce" />
             <TryDemoForm />

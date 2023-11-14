@@ -2,13 +2,12 @@
 
 import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react"
 import 'swiper/css';
+import { ContactFormOpenButton } from "./ContactFormOpenButton";
 
 type SlideCard = {
   image: string;
   title: string;
   description: string;
-  linkText: string;
-  link: string;
 }
 
 export const ValueSlider = () => {
@@ -17,43 +16,31 @@ export const ValueSlider = () => {
       title: "Enhance Your Operations",
       description: "Let our Technology suite automate back office operations and let your team focus on what matters the most.",
       image: "home/slider/value-slider-1.png",
-      linkText: "Contact Now",
-      link: "#"
     },
     {
       title: "Plug & Play Solution",
       description: "Unleash the power of JEETH in few simple steps. No hefty documentation and 100% Online.",
       image: "home/slider/value-slider-2.png",
-      linkText: "Contact Now",
-      link: "#"
     },
     {
       title: "Always available Inventory",
       description: "Run a sourcing campaign on our marketplace to seemlessly hire verified driver partners as and when required.",
       image: "home/slider/value-slider-3.png",
-      linkText: "Contact Now",
-      link: "#"
     },
     {
       title: "Enhance Your Operations",
       description: "Let our Technology suite automate back office operations and let your team focus on what matters the most.",
       image: "home/slider/value-slider-1.png",
-      linkText: "Contact Now",
-      link: "#"
     },
     {
       title: "Plug & Play Solution",
       description: "Unleash the power of JEETH in few simple steps. No hefty documentation and 100% Online.",
       image: "home/slider/value-slider-2.png",
-      linkText: "Get in Touch",
-      link: "#"
     },
     {
       title: "Always available Inventory",
       description: "Run a sourcing campaign on our marketplace to seemlessly hire verified driver partners as and when required.",
       image: "home/slider/value-slider-3.png",
-      linkText: "Contact Now",
-      link: "#"
     },
   ];
 
@@ -95,9 +82,7 @@ export const SlideCard = ({ data }: { data: SlideCard }) => {
       <img className={`m-auto transition-[width] duration-300 ${swiperSlide.isActive ? 'w-[250px]' : 'w-[180px]'}`} src={data.image} alt={data.title} />
       <h4 className={`${swiperSlide.isActive ? 'text-primary' : 'text-secondary'} text-xl font-bold my-4`}>{data.title}</h4>
       <p className="text-sm font-light mb-4">{data.description}</p>
-      <a href={data.link} className="mt-4 w-[fit-content] bg-secondary text-white text-lg font-semibold py-2 px-6 rounded-full hover:text-white hover:bg-primary transition-all">
-        {data.linkText}
-      </a>
+      <ContactFormOpenButton text="Contact Now" className="mt-4 w-[fit-content] bg-secondary text-white text-lg font-semibold py-2 px-6 rounded-full hover:text-white hover:bg-primary transition-all" />
     </div>
   )
 }

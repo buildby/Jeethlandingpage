@@ -1,15 +1,10 @@
-'use client';
-import { useState } from "react";
-import { Button } from "../components/Button";
+import { ContactFormOpenButton } from "../components/ContactFormOpenButton";
 import { ClientListing } from "../components/client-listing";
 import { NewsLetter } from "../components/news-letter";
 import { Testimonials } from "../components/testimonials";
 import { ValueSlider } from "../components/value-slider";
 
 export default function HomePage() {
-  const [isTryDemoFormOpen, setIsTryDemoFormOpen] = useState(false);
-  const openTryDemoForm = () => setIsTryDemoFormOpen(true);
-  const closeTryDemoForm = () => setIsTryDemoFormOpen(false);
 
   return (
     <main className="">
@@ -21,7 +16,7 @@ export default function HomePage() {
             <h3 className="mb-6 font-bold text-3xl"><i>Guess what?</i> You've just hit the jackpot!</h3>
 
             <p className="font-extralight text-xl">We help you revolutionize your transportation game with our cutting-edge technology and financial solutions.</p>
-            <Button text="Try Demo" link="#" className="mt-8" onClick={openTryDemoForm} />
+            <ContactFormOpenButton text="Try Demo" className="mt-8" />
           </div>
           <div className="order-1 md:order-2 translate-x-[-40%] translate-y-[40%] md:translate-x-[-20%] md:translate-y-[30%]">
             <img className="scale-[1.7] md:scale-[1.5]" src="home/car-with-shadow-2.png" alt="" />

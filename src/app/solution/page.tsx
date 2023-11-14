@@ -1,4 +1,5 @@
 import { Button } from "../../components/Button";
+import { ContactFormOpenButton } from "../../components/ContactFormOpenButton";
 import { NewsLetter } from "../../components/news-letter";
 import { TestimonialsSlider } from "../../components/testimonials-slider";
 
@@ -10,7 +11,7 @@ export default function SolutionPage() {
         <div className="p-4 md:p-0 container mx-auto grid grid-cols-1 md:grid-cols-3 overflow-hidden">
           <div className="col-span-2 mt-0 md:mt-12 flex flex-col py-8 md:py-16 order-2 md:order-1">
             <h2 className="mb-4 font-thin text-3xl leading-10">Cutting-edge technology solutions to address <b className="font-semibold">capital and driver churn</b> issues in the Employee Transportation service segment.</h2>
-            <Button text="Try Demo" link="#" className="mt-8" />
+            <ContactFormOpenButton text="Try Demo" className="mt-8" />
           </div>
           <div className="order-1 md:order-2">
             <img className="w-[250px] md:w-auto mt-8 md:ml-auto mx-auto" src="solutions/app-mockup.png" alt="" />
