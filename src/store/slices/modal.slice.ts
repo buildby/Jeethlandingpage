@@ -6,7 +6,7 @@ interface ModalState {
 }
 
 const initialState: ModalState = {
-  isContactFormOpen: true,
+  isContactFormOpen: false,
   isTryDemoFormOpen: false,
 };
 
