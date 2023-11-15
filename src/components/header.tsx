@@ -4,14 +4,14 @@ import React, { useState } from 'react';
 import Modal from './Modal';
 import ContactForm from './contact-form';
 import { TryDemoForm } from './try-demo-form';
-import { useDispatch, useSelector } from 'react-redux';
 import { closeContactForm, closeTryDemoForm, openContactForm, openTryDemoForm, selectIsContactFormModalOpen, selectIsTryDemoFormModalOpen } from '../store/slices/modal.slice';
+import { useAppDispatch, useAppSelector } from '../store/hooks';
 
 export const Header = () => {
-  const isContactFormOpen = useSelector(selectIsContactFormModalOpen);
-  const isTryDemoFormOpen = useSelector(selectIsTryDemoFormModalOpen);
+  const isContactFormOpen = useAppSelector(selectIsContactFormModalOpen);
+  const isTryDemoFormOpen = useAppSelector(selectIsTryDemoFormModalOpen);
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const navLinks = [
     { title: 'Home', path: '/' },
@@ -98,18 +98,22 @@ export const Header = () => {
 
       {isContactFormOpen && (
         <Modal onClose={closeContactModal}>
-          <div className="flex flex-row bg-white">
-            <img className="hidden md:block w-[305px]" src="modal-bg.png" alt="Empower your workforce" />
-            <ContactForm />
+          <div className="flex flex-row gap-4">
+            <div className='hidden md:block w-[40%]'>
+              <img className="object-cover w-[600px] h-full rounded-tl-3xl rounded-bl-3xl" src="modal-bg.png" alt="Empower your workforce" />
+            </div>
+            <ContactForm className="md:w-[60%]" />
           </div>
         </Modal>
       )}
 
       {isTryDemoFormOpen && (
         <Modal onClose={closeTryDemoModal}>
-          <div className="flex flex-row bg-white">
-            <img className="hidden md:block w-[305px]" src="modal-bg.png" alt="Empower your workforce" />
-            <TryDemoForm />
+          <div className="flex flex-row gap-4">
+            <div className='hidden md:block w-[40%]'>
+              <img className="object-cover h-full rounded-tl-3xl rounded-bl-3xl" src="modal-bg.png" alt="Empower your workforce" />
+            </div>
+            <TryDemoForm className="md:w-[60%]" />
           </div>
         </Modal>
       )}
