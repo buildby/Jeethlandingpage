@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Jeeth | Provide instant access to the earned wages of your workforce.",
   description: "The world's first solution tailored for employee transportation service businesses, seamlessly integrating cutting-edge technology and financial innovations within a single platform.",
   openGraph: {
-    images: ["og-image.png"]
+    images: ["/og-image.png"]
   },
   keywords: ["Earned wage access", "Credit for blue collar workforce", "Fintech", "Employee Transportation Services", "Instant Finance", "Software product for ETS", "ETS", "Finance", "Marketplace", "Vendor Finance"]
 };
