@@ -67,7 +67,7 @@ export const Header = () => {
               Try Demo
             </button>
 
-            <Link target="_blank" href="https://staging.portal.jeeth.co.in/" className="bg-primary text-white font-semibold ml-8 text-sm py-2 px-6 rounded-full hover:bg-secondary">
+            <Link target="_blank" href="https://portal.jeeth.co.in/" className="bg-primary text-white font-semibold ml-8 text-sm py-2 px-6 rounded-full hover:bg-secondary">
               Login
             </Link>
           </div>
